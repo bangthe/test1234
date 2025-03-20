@@ -1,0 +1,60 @@
+//Piet Mondrian 이라는 화가의 "New york city" 라는 작픔을 그려봤습니다.
+
+function setup() {
+  createCanvas(570, 600); 
+  background('rgb(243,247,246)'); }
+
+function draw(){
+  //line_weight:10 
+  //blue(75,96,177) red(212,9,38) yellow(253,237,2) priority:B<R<Y
+  
+  //blue
+  stroke(75,96,177);
+  strokeWeight(10);
+  //V_blue
+  line(36,0,36,600);
+  //H_blue
+  line(0,55,570,55);
+  line(0,240, 570,240);
+  line(0,550,600,550);
+  
+  
+  //red
+  stroke(212,9,38);
+  //V_red
+  line(190,0,190,600);
+  line(520,0,520,600);
+  //H_red     exclude H_red1,H_red2
+  line(0,13,570,13);
+  line(0,390,570,390);
+  
+  //yellow
+  stroke(253,237,2);
+  //V_yellow
+  line(20,0,20,600);
+  line(55,0,55,600);
+  line(260,0,260,600);
+  line(380,0,380,600);
+  line(410,0,410,600);
+  line(470,0,470,600);
+  line(490,0,490,600);
+  line(540,0,540,600);
+  //H_yellow
+  line(0,40,570,40);
+  line(0,130,570,130);
+  line(0,260,570,260);
+  line(0,370,570,370);
+  line(0,480,570,480);
+  line(0,510,570,510);
+  line(0,580,570,580);
+  
+  //reflect_exception   left->right
+  stroke(75,96,177);
+  line(15,240,25,240);
+  
+  stroke(212,9,38)
+  line(50,390,60,390);
+  line(190,35,190,45);
+  line(190,365,190,375);
+  line(520,125,520,135);
+}
